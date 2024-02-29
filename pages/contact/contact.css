@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+.marquee1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 66, 95);
+}
+.m-text{
+    color: white;
+}
+nav{
+    position: sticky !important;
+    top: 0px;
+    z-index: 999999;
+    background-color: black !important;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-toggler{
+    background-color: rgb(240, 66, 95);
+}
+.n-img img{
+    width: 100px;
+}
+.offcanvas{
+    background-color: black;
+}
+.offcanvas-header{
+    background-color: rgb(240, 66, 95);
+}
+.nav-link h3{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(240, 66, 95);
+}
+.nav-link::after{
+    color: rgb(240, 66, 95);
+}
+.dropdown-menu{
+    background-color: rgb(240, 66, 95);
+    backdrop-filter: blur(10px);
+}
+.panel,.panel img{
+    width: 100%;
+}
+.contact{
+    padding: 4%;
+    height: 400px;
+}
+.col-md-3{
+    background:rgb(241, 53, 84);
+    padding: 3%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+
+
+.col-md-9{
+    background: aqua;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+.emailbtn{
+    background-color: black;
+    color: white;
+    height: 4vh;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.btn{
+    background-color: #25274d;
+    color: white;
+    text-decoration: none;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.main-container .div iframe{
+    border-radius: 20px !important;
+}
+.main-container .div {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(0, 255, 255, 0.322);
+    backdrop-filter: blur(50px);
+    border: 5px solid aqua;
+    transition: 1s;
+}
+.main-container .div h2{
+    color: rgb(236, 45, 77);
+    font-weight: 600;
+}
+.main-container .div:hover{
+    background-color: rgba(241, 54, 85, 0.247);
+}
+.main-container .div:hover>h2{
+    
+    color: aqua;
+}

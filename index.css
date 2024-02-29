@@ -1,0 +1,478 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.marquee1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 66, 95);
+}
+.m-text{
+    color: white;
+}
+nav{
+    position: sticky !important;
+    top: 0px;
+    z-index: 999999;
+    background-color: black !important;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-toggler{
+    background-color: rgb(240, 66, 95);
+}
+.n-img img{
+    width: 100px;
+}
+.offcanvas{
+    background-color: black;
+}
+.offcanvas-header{
+    background-color: rgb(240, 66, 95);
+}
+.nav-link h3{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgb(240, 66, 95);
+    transition: 1s;
+}
+.nav-link h3:hover{
+    background: -webkit-linear-gradient(left,aqua , rgb(252, 60, 92));
+}
+.nav-link::after{
+    color: rgb(240, 66, 95);
+}
+.dropdown-menu{
+    background-color: rgb(240, 66, 95);
+    backdrop-filter: blur(10px);
+}
+.panel,.panel img{
+    width: 100%;
+}
+
+                                    /* container-1 cards */
+.container-1{
+    width: 100%;
+}
+.container-1 .cards .card{
+    padding: 20px;
+    max-width: 600px;
+    min-width: 400px;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 5px solid rgb(240, 66, 95);
+    border-radius: 10px;
+    transition: 1s;
+}
+.container-1 .cards .card:hover{
+    border: 5px solid aqua;
+}
+.container-1 .cards .card a h2{
+    color: rgb(240, 66, 95);
+    font-weight: 800;
+
+}
+.container-1 .cards .card a h2{
+    color: aqua;
+    font-weight: 800;
+    font-size: 40px;
+}
+.container-1 .cards .card a p{
+    color: white;
+}
+.container-1 .card a{
+    display: flex;
+    justify-content: space-between;
+}
+.container-1 .cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.container-1 .cards .card .card-img{
+    width: fit-content;
+}
+@media screen and (max-width:800px){
+    .container-1{
+        width: 100%;
+    }
+    .container-1 .cards .card{
+        padding: 20px;
+        max-width: 100%;
+        min-width: 30%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border: 5px solid rgb(240, 66, 95);
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .container-1 .cards .card:hover{
+        border: 5px solid aqua;
+    }
+    .container-1 .cards .card a h2{
+        color: rgb(240, 66, 95);
+        font-weight: 800;
+    
+    }
+    .container-1 .cards .card a h2{
+        color: aqua;
+        font-weight: 800;
+        font-size: 40px;
+    }
+    .container-1 .cards .card a p{
+        color: white;
+    }
+    .container-1 .card a{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-1 .cards{
+        max-width: 300%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .container-1 .cards .card .card-img{
+        width: fit-content;
+    }
+    
+}
+
+                                            /* container-2  */
+
+.container-2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-2 .container-img{
+    width: 60%;
+}
+.container-2 .container-img img{
+    width: 60%;
+}
+.container-2 .content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.container-2 .content h2{
+    color: aqua;
+}
+.container-2 .content p{
+    width: 80%;
+    font-size: 20px;
+}
+@media screen and (max-width:1200px){
+    .container-2 .container-2-img{
+        width: 50%;
+    }
+    .container-2 .container-2-img img{
+        width: 100%;
+    }
+    .container-2 .content{
+        width: 100%;
+    }
+    .container-2 .content p{
+        width: 100%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:800px) {
+    .container-2{
+        width: 100%;
+    }
+    .container-2 .container-2-img{
+        width: 100%;
+    }
+    .container-2 .container-2-img img{
+        width: 100%;
+    }
+    .container-2 .content{
+        width: 100%;
+        padding: 10px;
+    }
+    .container-2 .content p{
+        width: 100%;
+        font-size: 20px;
+    }
+    
+}
+
+                                            /* menu */
+
+.container-3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-3 h2{
+    font-size: 500%;
+    color: aqua;
+    font-weight: 800;
+}
+.container-3 p{
+    font-size: 200%;
+    
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.menu h2:hover>.h-b-bottom{
+    width: 100%;
+    height: 10px;
+    background-color: aqua;
+    
+}
+.menu h2:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 255, 255, 0.631);
+}
+.h-b-bottom{
+    width: 0px;
+    height: 10px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.menu h2{
+    color: aqua;
+    font-weight: 800;
+    cursor: pointer;
+}
+.s-card-content{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.m-cars{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+.m-cars .s-card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    transition: 1s;
+}
+.m-cars .s-card:hover{
+    box-shadow: 0px 0px 10px 1px aqua;
+
+}
+.m-cars .s-card .btn{
+    width: 200px;
+    border: 2px solid rgb(241, 62, 92);
+    color: aqua;
+}
+.m-cars .s-card .btn:hover{
+    background-color: aqua;
+    border: 2px solid aqua;
+    color: rgb(241, 62, 92);
+    font-weight: 800;
+}
+.m-cars .s-card .c-name{
+    color: white;
+    font-weight: 700;
+}
+.m-cars .s-card .c-price{
+    color: aqua;
+    font-weight: 700;
+}
+.m-cars .s-card .sc-img{
+    width: 100%;
+    height: 30vh;
+}
+.m-cars .s-card .sc-img img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:800px) {
+    .container-4 .m-cars .s-card{
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+    }
+    .m-cars .s-card .c-name{
+        color: white;
+        font-weight: 700;
+    }
+    .m-cars .s-card .c-price{
+        color: aqua;
+        font-weight: 700;
+    }
+    .m-cars .s-card .sc-img{
+        width: 100%;
+        height: 100%;
+    }
+    .s-card-content{
+        padding: 10px;
+    }
+}
+                                        /* CONTAINER-5 */
+
+.container-5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-5 p{
+    font-size: 30px;
+}
+
+.container-5 .c5-title h2:nth-child(1){
+    font-weight: 800;
+    font-size: 200%;
+    display: inline;
+    color: rgb(241, 62, 92);
+}
+.container-5 .c5-title h2:nth-child(2){
+    font-weight: 800;
+    font-size: 300%;
+    display: inline;
+    color: aqua;
+}
+.container-5 .c5-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.container-5 .c5-content .card{
+    padding: 5px;
+    max-width: 400px;
+    min-width: 300px;
+    background-color: black;
+    border: 5px solid aqua;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    transition: 1s;
+}
+.container-5 .c5-content .card:hover{
+    border: 5px solid rgb(241, 62, 92);
+}
+.container-5 .c5-content .card:hover>.c-content h3{
+    color: rgb(241, 62, 92);
+
+}
+.container-5 .c5-content .card .c-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.container-5 .c5-content .card .c-content p{
+    color: white;
+    width: 80%;
+    font-size: 20px;
+}
+.container-5 .c5-content .card .c-content h3{
+    color: aqua;
+    font-weight: 800;
+    transition: 1s;
+}
+
+                                /* container-6 */
+
+.main-container-6{
+    background-image: url(./images/map.jpg);
+
+}
+.container-6{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container-6 .card{
+    max-width: 400px;
+    min-width: 400px;
+    height: 30vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(242, 59, 89, 0.495);
+    border: 10px solid aqua;
+    color: white; 
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 1s;
+}
+.container-6 .card:hover{
+    background-color: rgba(0, 255, 255, 0.418);
+    border: 10px solid rgb(242, 59, 90);
+}
+
+/* footer */
+footer{
+    width: 100%;
+    
+}
+.text-center{
+    background-color: rgba(242, 59, 90, 0.395) !important;
+    backdrop-filter: blur(20px);
+}
+.mb-4{
+    height: 1vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mb-4 a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.marquee1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 66, 95);
+}
+.m-text{
+    color: white;
+}
+nav{
+    position: sticky !important;
+    top: 0px;
+    z-index: 999999;
+    background-color: black !important;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-toggler{
+    background-color: rgb(240, 66, 95);
+}
+.n-img img{
+    width: 100px;
+}
+.offcanvas{
+    background-color: black;
+}
+.offcanvas-header{
+    background-color: rgb(240, 66, 95);
+}
+.nav-link h3{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    background-color: rgb(240, 66, 95);
+    transition: 1s;
+}
+.nav-link h3:hover{
+    background: -webkit-linear-gradient(left,aqua , rgb(252, 60, 92));
+}
+.nav-link::after{
+    color: rgb(240, 66, 95);
+}
+.dropdown-menu{
+    background-color: rgb(240, 66, 95);
+    backdrop-filter: blur(10px);
+}
+.panel,.panel img{
+    width: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sec{
+    max-width: 450px;
+    padding: 10px;
+}
+.sec h2{
+    display: inline;
+    color: aqua;
+    font-weight: 700;
+}
+.sec h2{
+    display: inline;
+    color: rgb(243, 47, 80);
+    font-weight: 900;
+
+}
+.main-container .sec:nth-child(1){
+    border-right: 7px solid aqua;
+    border-left: 7px solid rgb(238, 41, 74);
+    font-size: 19px;
+}
+.main-container .sec:nth-child(2){
+    border-right: 7px solid rgb(231, 32, 65);
+}
+.main-container .sec:nth-child(3){
+    font-size: 19px;
+}
+@media screen and (max-width:1300px) {
+    .main-container .sec:nth-child(3){
+        border-right: 7px solid aqua;
+        border-left: 7px solid rgb(238, 41, 74);
+        font-size: 19px;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .sec{
+        max-width: 100%;
+        margin-top: 80px;
+    }
+    .main-container .sec:nth-child(2){
+        border-right: 7px solid aqua;
+        border-left: 7px solid rgb(238, 41, 74);
+        font-size: 19px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    
+}
+.text-center{
+    background-color: rgba(242, 59, 90, 0.395) !important;
+    backdrop-filter: blur(20px);
+}
+.mb-4{
+    height: 1vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mb-4 a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  nav{
+    position: sticky !important;
+    top: 0px;
+    z-index: 999999;
+    background-color: black !important;
+  }
+  .navbar-brand{
+    color: white;
+  }
+  .navbar-toggler{
+    background-color: rgb(240, 66, 95);
+  }
+  .n-img img{
+    width: 100px;
+  }
+  .offcanvas{
+    background-color: black;
+  }
+  .offcanvas-header{
+    background-color: rgb(240, 66, 95);
+  }
+  .nav-link h3{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(240, 66, 95);
+  }
+  .nav-link::after{
+    color: rgb(240, 66, 95);
+  }
+  .dropdown-menu{
+    background-color: rgb(240, 66, 95);
+    backdrop-filter: blur(10px);
+  }
+  .panel,.panel img{
+    width: 100%;
+  }
+  html {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+  body {
+    background-color: #000000;
+  }
+  p {
+    font-size: 12px;
+    color: white !important;
+  }
+
+
+  .s-card-content{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.m-cars{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+.m-cars .s-card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    transition: 1s;
+}
+.m-cars .s-card:hover{
+    box-shadow: 0px 0px 10px 1px aqua;
+
+}
+.m-cars .s-card .btn{
+    width: 200px;
+    border: 2px solid rgb(241, 62, 92);
+    color: aqua;
+}
+.m-cars .s-card .btn:hover{
+    font-weight: 800;
+    background-color: aqua;
+    border: 2px solid aqua;
+    color: rgb(241, 62, 92);
+}
+.m-cars .s-card .c-name{
+    font-weight: 700;
+    color: white;
+}
+.m-cars .s-card .c-price{
+    font-weight: 700;
+    color: aqua;
+}
+.m-cars .s-card .sc-img{
+    width: 100%;
+    height: 30vh;
+}
+.m-cars .s-card .sc-img img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (max-width:800px) {
+    .container-4 .m-cars .s-card{
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+    }
+    .m-cars .s-card .c-name{
+        color: white;
+        font-weight: 700;
+    }
+    .m-cars .s-card .c-price{
+        color: aqua;
+        font-weight: 700;
+    }
+    .m-cars .s-card .sc-img{
+        width: 100%;
+        height: 100%;
+    }
+    .s-card-content{
+        padding: 10px;
+    }
+    .search{
+       min-width: 50% !important;
+    }
+    .n-img img{
+        width: 50px;
+    }
+}
+
+
+  .marquee1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 66, 95);
+}
+.m-text{
+    color: white;
+}
+.search{
+    width: 30%;
+}
+.search .d-flex .me-2{
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: rgb(202, 43, 69);
+}
+.search .d-flex .btn{
+    font-weight: 700;
+    background-color: rgba(0, 255, 255, 0.637);
+}
+.search .d-flex .btn:hover{
+    background-color: aqua;
+    font-weight: 700;
+}
+  
+/* footer */
+footer{
+    width: 100%;
+    
+}
+.text-center{
+    backdrop-filter: blur(20px);
+    background-color: rgba(242, 59, 90, 0.395) !important;
+}
+.mb-4{
+    height: 1vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mb-4 a{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.me-2::placeholder{
+    color: white;
+}

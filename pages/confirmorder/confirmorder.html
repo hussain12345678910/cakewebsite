@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cake</title>
+    <link rel="icon" href="../../images/The Cake Logo-01.png">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+
+    <link rel="stylesheet" href="confirmorder.css">
+
+</head>
+
+<body>
+    <marquee scrolldelay="200" behavior="" direction="right" class="marquee1">
+        <h4 class="m-text">cs@The Cake.net | Phone: 03122691337 | Whatsapp: 03232883515</h4>
+    </marquee>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="n-img"><img src="../../images/The Cake Logo-01.png" alt=""></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">
+                                <h3>Home</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../AllCategories/allCategories.html">
+                                <h3>All Categories</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../allproduct/allproduct.html"><h3>All Products</h3></a>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about/about.html">
+                                <h3>About</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact/contact.html">
+                                <h3>Contacts</h3>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../sitemap/sitemap.html"><h3>Site Map</h3></a>
+                        </li>
+                       
+
+
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <!-- <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" /> -->
+                <h3>Welcome</h3>
+                <p>You are 30 seconds away from enjoying our Delicious cakes</p>
+                <a href="../../index.html">To HOME</a><br />
+            </div>
+            <div class="col-md-9 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">The cake</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="fname" placeholder="First Name *"
+                                        value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lname" placeholder="Last Name *"
+                                        value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="pass" class="form-control" placeholder="Address *"
+                                        value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="cpass" class="form-control" placeholder="Delivery Address *"
+                                        value="" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="maxl">
+                                        <label class="radio inline">
+                                            <input type="radio" name="gender" value="male" checked>
+                                            <span> Male </span>
+                                        </label>
+                                        <label class="radio inline">
+                                            <input type="radio" name="gender" value="female">
+                                            <span>Female </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" id="num" minlength="10" maxlength="10" name="txtEmpPhone"
+                                        class="form-control" placeholder="Your Phone *" value="" />
+                                </div>
+
+                                <a href="" class="btnRegister" id="btnRegister">Confirm Order</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var mrquee = document.getElementsByClassName("m-text");
+    var a;
+    navigator.geolocation.getCurrentPosition((e) => {
+        fetch(`https://api.opencagedata.com/geocode/v1/json?q=${e.coords.latitude}%2C${e.coords.longitude}&key=3b10b5bb58f9468191dadedd17ed1533`)
+            .then((data) => {
+                return data.json()
+            }).then((res) => {
+                a = res.results[0].formatted
+                mrquee[0].innerHTML += ` ${a}`
+            })
+    })
+
+
+    console.log(a)
+
+
+    var btnRegister = document.getElementById("btnRegister");
+
+    btnRegister.addEventListener("click", function (e) {
+        e.preventDefault();
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var num = document.getElementById("num").value;
+
+        var conditionFailed = checkConditions(fname, lname, num);
+
+        if (conditionFailed) {
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Order was not successful: " + conditionFailed,
+                showConfirmButton: false,
+                timer: 1500
+            });
+        } else {
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Thanks for Ordering from The Cake: " + fname + " " + lname,
+                showConfirmButton: false,
+                timer: 1500
+            })
+                .then(() => {
+
+                    redirectToIndex();
+                })
+        }
+    });
+
+    function redirectToIndex() {
+        window.location.href = "../../index.html";
+    }
+
+    function checkConditions(fname, lname, num) {
+        if (fname === "") {
+            return "First Name is required";
+        } else if (lname === "") {
+            return "Last Name is required";
+        } else if (num === "") {
+            return "Phone Number is required";
+        } else if (!isValidPhoneNumber(num)) {
+            return "Invalid phone number format";
+        }
+        return null; 
+    }
+
+    function isValidPhoneNumber(number) {
+        var regex = /^\d{10}$/;
+        return regex.test(number);
+    }
+</script>
+
+</html>

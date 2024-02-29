@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    color: white;
+    background: rgb(8, 7, 7);
+}
+a{
+    text-decoration: none;
+}
+.marquee1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 66, 95);
+}
+.m-text{
+    color: white;
+}
+nav{
+    position: sticky !important;
+    top: 0px;
+    z-index: 999999;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    background-color: black !important;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-toggler{
+    background-color: rgb(240, 66, 95);
+}
+.n-img img{
+    width: 100px;
+}
+@media screen and (max-width:766px) {
+    .register-right{
+     width: 100% !important;
+     margin: 0px !important;
+     border-top-left-radius: 0% 0% !important; 
+     border-bottom-left-radius: 0% 0% !important;    
+    }
+}
+.offcanvas{
+    background-color: black;
+}
+.offcanvas-header{
+    background-color: rgb(240, 66, 95);
+}
+.nav-link h3{
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(240, 66, 95);
+}
+.nav-link::after{
+    color: rgb(240, 66, 95);
+}
+.dropdown-menu{
+    backdrop-filter: blur(10px);
+    background-color: rgb(240, 66, 95);
+}
+.panel,.panel img{
+    width: 100%;
+}
+
+
+ .register{
+    background: -webkit-linear-gradient(left, rgb(252, 60, 92), aqua);
+    margin-top: 3%;
+    padding: 3%;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left a:hover{
+    text-decoration: none;
+    background-color: rgb(230, 28, 62);
+    color: aqua;
+    border: 2px solid aqua;
+
+}
+.register-left a{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 5%;
+    width: 60%;
+    background: aqua;
+    color: rgb(240, 54, 85);
+    font-weight: 900;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: -webkit-linear-gradient(left, aqua, rgb(252, 60, 92));
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+    width: 25%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    padding: 12%;
+    margin-top: -9%;
+    font-weight: lighter;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister:hover{
+    color: aqua;
+    text-decoration: none;
+}
+.btnRegister{
+    float: right;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 10%;
+    text-decoration: none ;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: rgb(239, 51, 82);
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
