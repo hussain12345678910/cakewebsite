@@ -11,6 +11,9 @@ body{
 a{
     text-decoration: none;
 }
+.n-img img {
+    width: 20vw;
+}
 .marquee1{
     height: 50px;
     width: 100%;
