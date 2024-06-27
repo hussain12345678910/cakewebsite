@@ -8,6 +8,9 @@ body{
     background-color: black;
     color: white;
 }
+p{
+    text-align:center !important;
+}
 a{
     text-decoration: none;
 }
