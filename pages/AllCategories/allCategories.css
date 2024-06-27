@@ -8,6 +8,9 @@ body{
     background-color: black;
     color: white;
 }
+.n-img img {
+    width: 20vw;
+}
 a{
     text-decoration: none;
 }
