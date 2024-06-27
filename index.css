@@ -13,7 +13,7 @@ body{
     font-size: 5vw !important;
 }
 .n-img img {
-    width: 20vw;
+    width: 100px;
 }
 a{
     text-decoration: none;
@@ -119,6 +119,9 @@ nav{
     .container-1{
         width: 100%;
     }
+    .n-img img {
+    width: 20vw;
+}
     .container-1 .cards .card{
         padding: 20px;
         max-width: 100%;
