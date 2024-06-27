@@ -8,8 +8,12 @@ body{
     background-color: black;
     color: white;
 }
-.container-3 p {
+.container-3 p ,.container-5 p {
     text-align:center !important;
+    font-size: 5vw !important;
+}
+.n-img img {
+    width: 20vw;
 }
 a{
     text-decoration: none;
@@ -35,9 +39,6 @@ nav{
 }
 .navbar-toggler{
     background-color: rgb(240, 66, 95);
-}
-.n-img img{
-    width: 100px;
 }
 .offcanvas{
     background-color: black;
