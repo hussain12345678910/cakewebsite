@@ -28,8 +28,8 @@ nav{
 .navbar-toggler{
   background-color: rgb(240, 66, 95);
 }
-.n-img img{
-  width: 100px;
+.n-img img {
+    width: 20vw;
 }
 .offcanvas{
   background-color: black;
